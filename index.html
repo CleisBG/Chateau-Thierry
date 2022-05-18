@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+
+    <title>Chateau Thierry</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="chateau_map.js"></script>
+
+  </head>
+  <body>
+
+    <header>
+      <img src="img/logo_ensg" alt="logo de l'ENSG" height="150px">
+      <div id='title'>
+        <h1>Chateau-Thierry</h1>
+        <h2>Licence Professionnelle MPGE, Master PPMD - février/mai 2022</h2>
+      </div>
+    </header>
+
+    <div id='content'>
+      <p>Ce site présente le travail réalisé dans le cadre de la modélisation en 3 dimensions (3D) de la porte Saint-Jean du château médiéval de
+         Château-Thierry. La commune est située dans le département de l’Aisne, en région Hauts-de-France. Ce produit a été demandé par l’archéologue
+         de la ville afin de procéder à des mesures précises de la structure et préparer une rénovation de la porte.</p>
+      <p>Le projet a été mené en deux temps, le premier a consisté en une semaine d’acquisition avec plusieurs équipes du parcours imagerie de la
+        licence professionnelle MPGE puis du parcours PPMD de l'ENSG, tandis que le second a été consacré aux traitements et à la diffusion des
+        produits par notre équipe.</p>
+          <img src="img/Chateau.JPG" alt="Photo drone de la porte St-Jean" width="860px">
+
+      <h2>Carte des points matérialisés</h2>
+      <div id="map_leg">
+        <div id="map"></div>
+        <div id="legende">
+          <h3>Légende des Clous:</h3>
+            <ul>
+              <li>1000 : En extérieur</li>
+              <li>2000 : En intérieur</li>
+              <li>3000 : Sur le toit</li>
+            </ui>
+        </div>
+      </div>
+
+      <a href="coord/coord.php">Coordonnées des points</a>
+      <hr width="50%">
+
+      <h2>Video de présentation</h2>
+      <video controls title="Video montrant le chateau de Chateau-Thierry">
+        <source src="img/Video_chateau.mp4" type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <p style="text-align:center;">Vidéo montrant les environs du chateau</p>
+      <hr width="50%">
+
+      <h2>Visualisation des nuages de points</h2>
+      <p style="text-align:center;">Offset des coordonnées: X = 1729000 et Y = 8205000.</p>
+      <iframe src="http://dias.ensg.eu/2022/CT/Potree_Drone/PV_Drone.html" style="width: 860px; height: 500px"></iframe>
+      <a href="http://dias.ensg.eu/2022/CT/Potree_Drone/PV_Drone.html" target='potree' title="lien vers PV Drone">Ouvrir la visualisation Potree dans une nouvelle fenêtre </a>
+      <hr width="50%">
+
+      <a href="http://dias.ensg.eu/2022/CT/Potree" target='potree'><img src="img/Potree.JPG" alt="Photo drone de la porte St-Jean" width="860px"></a>
+      <a href="http://dias.ensg.eu/2022/CT/Potree" target='potree' title="lien vers le nuage de points">Vue générale du site : visualisation Potree</a>
+      <hr width="50%">
+
+      <h2>Visualisation des maillages</h2>
+      <a href="http://dias.ensg.eu/2022/CT/Mesh" target='mesh'><img src="img/Mesh.JPG" alt="Photo drone de la porte St-Jean" width="860px"></a>
+      <a href="http://dias.ensg.eu/2022/CT/Mesh" target='mesh' title="lien vers les meshs">Vue générale du site : visualisation en Mesh</a>
+      <hr width="50%">
+
+      <h2>Écorchées réalisées</h2>
+      <iframe src="Potree_JS01-02-11-12/JS01-02-11-12.html" style="width: 860px; height: 500px"></iframe>
+      <a href="Potree_JS01-02-11-12/JS01-02-11-12.html" target='mesh' title="lien vers les meshs">Ouvrir la visualisation de l'écorchée dans une nouvelle fenêtre</a>
+      <hr width="50%">
+
+      <a href="3DHop/index.html" target='mesh'><img src="img/ecorchee_pas_bon" alt="image d'une écorchée" height="500px"></a>
+      <a href="3DHop/index.html" target='mesh' title="lien vers les meshs">Ouvrir la visualisation de l'écorchée dans une nouvelle fenêtre</a>
+
+    </div>
+
+    <footer>
+      <p><a href="DocTerrain/index.htm" target='_blank' title="documentation temporaire">Documentation terrain</a></p>
+      <p>© Images et textes par BENOIT-GONIN Cléis, FEUILLATRE Guillaume et POITIER Pablo</p>
+      <p>© Site réalisé par BENOIT-GONIN Cléis | 2022</p>
+    </footer>
+  </body>
+</html>
